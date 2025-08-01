@@ -1,4 +1,4 @@
-# FriendNet: Classifying Friendly Faces 👥🤖
+# FriendNet: Classifying Friendly Faces
 
 **A lightweight deep learning system for real-time face classification using CNN, ResNet50, and CLIP models.**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 
 FriendNet is a facial recognition system trained to classify images of **five individuals** from personal videos. It compares the performance of:
 - A custom CNN model (`FriendNet`)
@@ -20,7 +20,7 @@ All models are trained end-to-end and deployed in a full-stack web application.
 
 ---
 
-## 📊 Features
+## Features
 
 - Image classification using **three models**
 - Real-time prediction via web interface
@@ -33,7 +33,7 @@ All models are trained end-to-end and deployed in a full-stack web application.
 
 ---
 
-## 🗂️ Dataset
+## Dataset
 
 - Extracted from video frames of 5 individuals
 - ~5000 total images
@@ -46,29 +46,29 @@ All models are trained end-to-end and deployed in a full-stack web application.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
-### 🔍 Models
+### Models
 | Model       | Type           | Accuracy | Notes                          |
 |-------------|----------------|----------|--------------------------------|
 | FriendNet   | Custom CNN     | 95.73%   | Trained from scratch           |
 | ResNet50    | Pretrained     | 100%     | Fully fine-tuned               |
 | CLIP + Head | ViT-B/32 + MLP | 100%     | Fully fine-tuned               |
 
-### ⚙️ Backend
+### Backend
 - **FastAPI** for RESTful API
 - Routes:
   - `POST /predict`: returns predictions and confidence scores
 - Model loader, prediction service, and ensemble logic
 
-### 🖼️ Frontend
+### Frontend
 - **Nuxt.js** (Vue 3)
 - Users upload an image and choose a model
 - Results displayed with prediction confidence
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 | Component | Stack    | Platform   |
 |-----------|----------|------------|
@@ -84,5 +84,5 @@ All models are trained end-to-end and deployed in a full-stack web application.
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/friendnet.git
+git clone https://github.com/chris-miracle/friendnet.git
 cd friendnet
